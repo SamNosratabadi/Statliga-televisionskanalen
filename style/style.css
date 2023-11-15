@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  font-family: sans-serif;
+  color: #343a40;
+  background-color: #f8f9fa;
+}
+
+.container {
+  margin: 0 auto;
+  font-size: 18px;
+}
+header {
+  display: flex;
+  padding: 20px;
+  margin-top: 32px;
+  margin-bottom: 48px;
+  font-size: 42px;
+  line-height: 1.1;
+  border-bottom: 10px solid #0b7285;
+  justify-content: center;
+}
+
+footer {
+  border-bottom: 10px solid #0b7285;
+  display: flex;
+  justify-content: center;
+}
+.create,
+.search,
+.delete {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.beskrivning {
+  height: 50px;
+}
+
+.åldersgräns {
+  font-weight: bold;
+  width: auto;
+  cursor: pointer;
+}
+
+.button {
+  margin-top: 16px;
+  background-color: #0b7285;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  display: inline-block;
+
+  font-size: 14px;
+  padding: 8px 12px;
+  cursor: pointer;
+  width: 80px;
+  letter-spacing: 0.6px;
+}
+
+h2 {
+  font-size: 36px;
+  width: 250px;
+  padding-bottom: 30px;
+}
+
+.create,
+.search {
+  display: flex;
+  flex: 1;
+  margin: 10px;
+}
+
+.allinone {
+  display: flex;
+  justify-content: space-around;
+}
+
+textarea {
+  width: 300px;
+  height: 150px;
+  resize: none;
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+label {
+  font-weight: bold;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 24px;
+}
+
+#sökresultat {
+  display: flex;
+  margin-top: 70px;
+  padding-bottom: 20px;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sökresult {
+  display: flex;
+  margin-bottom: 30px;
+  flex-direction: column;
+  gap: 10px;
+  overflow-wrap: break-word;
+  inline-size: 50vw;
+  font-size: 18px;
+  line-height: 1.5;
+  padding-left: 50px;
+}
+
+.datalist ul {
+  display: flex;
+  margin-bottom: 100px;
+  flex-direction: column;
+  gap: 20px;
+  overflow-wrap: break-word;
+  inline-size: 50vw;
+  font-size: 18px;
+  list-style: none;
+  font-weight: bold;
+  padding-left: 50px;
+}
+.datalist ul :first-letter {
+  text-transform: uppercase;
+}

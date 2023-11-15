@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Statligatelevisionskanalen</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="scripts/script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Statliga televisonskanalen</h1>
+      </header>
+
+      <section class="allinone">
+        <!-- create movie -->
+        <section>
+          <div class="create">
+            <h2>Skapa film</h2>
+
+            <!-- Titel -->
+            <label for="titel">Titel:</label>
+            <input
+              type="text"
+              class="name"
+              name="Name"
+              placeholder="Ange filmens namn"
+              id="titel"
+            />
+
+            <!-- Beskrivning -->
+            <label for="Beskrivning">Beskrivning:</label>
+            <textarea
+              id="beskrivning"
+              placeholder="Ange beskrivning"
+            ></textarea>
+
+            <!--Åldersgräns-- -->
+            <label for="åldersgräns">Åldersgräns:</label>
+            <select
+              id="åldersgräns"
+              name="åldersgränsmeny"
+              class="åldersgränsmeny"
+            >
+              <option value="7">7</option>
+              <option value="11">11</option>
+              <option value="15">15</option>
+            </select>
+            <button onclick="javascript:skapa()" class="button">Skapa</button>
+          </div>
+        </section>
+
+        <!-- search for movie -->
+        <section>
+          <nav class="search">
+            <h2>Sök</h2>
+            <label for="Name">Titel:</label>
+            <input
+              id="sök"
+              type="text"
+              class="name"
+              name="Name"
+              placeholder="Ange filmens namn"
+            />
+
+            <button onclick="javascript:sök()" class="button">Sök</button>
+            <button onclick="javascript:lagradLista()" class="button">
+              Lista
+            </button>
+          </nav>
+        </section>
+
+        <!-- Delete -->
+        <section>
+          <nav class="delete">
+            <h2>Rensa lagring</h2>
+            <button onclick="javascript:rensa()" class="button">Rensa</button>
+          </nav>
+        </section>
+
+        <!-- Resultat -->
+      </section>
+      <div id="sökresultat">
+        <div id="resultTitel" class="sökresult"></div>
+
+        <div id="resultBeskrivning" class="sökresult"></div>
+
+        <div id="resultAlder" class="sökresult"></div>
+      </div>
+
+      <!-- Lagring -->
+      <section>
+        <div class="datalist">
+          <ul id="programList"></ul>
+        </div>
+      </section>
+
+      <footer>Copyright &copy; 2023 by Statliga televisionskanalen</footer>
+    </div>
+  </body>
+</html>
